@@ -20,6 +20,7 @@ from diamond.server import Server
 import optparse
 import signal
 import logging.handlers
+import configobj
 
 def main():
     # Initialize Options
