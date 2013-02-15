@@ -48,7 +48,7 @@ pkgPath('share/diamond/collectors', 'src/collectors')
 
 setup(
     name            = 'diamond',
-    version         = '0.2.0',
+    version         = '0.2.0-rax2',
     url             = 'https://github.com/BrightcoveOS/Diamond',
     author          = 'The Diamond Team',
     author_email    = 'https://github.com/BrightcoveOS/Diamond',
@@ -57,6 +57,7 @@ setup(
     package_dir     = {'' : 'src'},
     packages        = ['diamond' , 'diamond.handler'],
     scripts         = glob('bin/*'),
+    install_requires= ['configobj'], 
     data_files      = data_files,
     #test_suite      = 'test.main',
     **setup_kwargs
